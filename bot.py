@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 import os
-TOKEN = os.environ.get("8948689814:AAHVYWyhVd3X0XdumJR7JofgNRvNgaLBX4k")
+TOKEN = os.environ.get("TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Trade Hunter запущен и работает.")
